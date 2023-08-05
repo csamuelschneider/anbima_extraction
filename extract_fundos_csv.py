@@ -40,7 +40,7 @@ def main():
 
     access_token = authenticate(url_token, config.client_id, config.client_secret)
     fundos_json = apiCall(url_base, config.client_id, access_token)
-    path = 'D:/Projects/anbima_test/fundos_csv.csv'
+    path = 'D:/Projects/anbima_test/fundos.txt'
     dict_to_csv(fundos_json, path)
 
 if __name__ == "__main__":
